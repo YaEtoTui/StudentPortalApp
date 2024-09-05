@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/entryFrag">
+
+    <fragment
+        android:id="@+id/entryFrag"
+        android:name="sazhin.pp.studentportalapp.fragment.EntryFragment"
+        android:animateLayoutChanges="true"
+        tools:layout="@layout/fragment_entry">
+        <action
+            android:id="@+id/action_entryFrag_to_regFrag"
+            app:destination="@+id/regFrag"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/regFrag"
+        android:name="sazhin.pp.studentportalapp.fragment.RegistrationFragment"
+        android:animateLayoutChanges="true"
+        tools:layout="@layout/fragment_registration">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EntryFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:gravity="center"
+        android:text="@string/welocme"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NameProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="96dp"
+        android:gravity="center"
+        android:text="@string/name_portal"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Table"
+        android:layout_width="0dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameProject">
+
+        <ImageView
+            android:id="@+id/idRectLilac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/rectangle_table"/>
+
+        <EditText
+            android:id="@+id/edPhone"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rectangle_edit_settings_2"
+            android:hint="@string/tint_number_phone"
+            android:inputType="phone"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:hintTextColor="@color/tint"
+            app:layout_constraintEnd_toEndOf="@+id/idRectLilac"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/rectangle_edit_settings_2"
+            android:hint="@string/tint_password"
+            android:inputType="phone"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:hintTextColor="@color/tint"
+            app:layout_constraintEnd_toEndOf="@+id/edPhone"
+            app:layout_constraintStart_toStartOf="@+id/edPhone"
+            app:layout_constraintTop_toBottomOf="@+id/edPhone" />
+
+        <Button
+            android:id="@+id/idButtonAuth"
+            android:layout_width="222dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="71dp"
+            android:backgroundTint="@drawable/button_text_color_auth_page"
+            android:text="@string/button_auth"
+            android:textColor="@drawable/button_text_color_auth"
+            app:cornerRadius="15dp"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/edPassword"
+            app:layout_constraintStart_toStartOf="@+id/edPassword"
+            app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+    android:id="@+id/Question"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:gravity="center"
+    android:text="@string/question_is_account_not"
+    android:textColor="@color/gree_question"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="@+id/Table"
+    app:layout_constraintStart_toStartOf="@+id/Table"
+    app:layout_constraintTop_toBottomOf="@+id/Table" />
+
+    <TextView
+        android:id="@+id/Registr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/registration"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Question"
+        app:layout_constraintStart_toStartOf="@+id/Question"
+        app:layout_constraintTop_toBottomOf="@+id/Question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

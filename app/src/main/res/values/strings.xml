@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">StudentPortalApp</string>
+
+    <string name="welocme">Добро пожаловать!</string>
+    <string name="name_portal"><b>СтудентПортал</b></string>
+    <string name="tint_number_phone">Введите номер телефона</string>
+    <string name="tint_password">Введите пароль</string>
+    <string name="tint_password_2">Повторно введите пароль</string>
+    <string name="tint_gender">Введите пол</string>
+    <string name="tint_date">Введите дату рождения</string>
+    <string name="button_auth">Войти</string>
+    <string name="question_is_account_not">Еще нет учетной записи?</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="create">Создание аккаунта</string>
+    <string name="info">Заполните информацию о себе</string>
+    <string name="text_tag">Выберите наиболее подходящие для себя теги: </string>
+    <string name="education">обучение</string>
+    <string name="search">поиск работы</string>
+    <string name="career">карьера</string>
+    <string name="resume">резюме</string>
+</resources>

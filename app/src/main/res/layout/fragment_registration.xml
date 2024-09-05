@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RegistrationFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/NameProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/name_portal"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/create"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/NameProject"
+        app:layout_constraintStart_toStartOf="@+id/NameProject"
+        app:layout_constraintTop_toBottomOf="@+id/NameProject" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Table"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Create"
+        android:background="@drawable/rectangle_table">
+
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/info"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Table"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edPhone"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/rectangle_edit_settings_2"
+            android:hint="@string/tint_number_phone"
+            android:inputType="phone"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:hintTextColor="@color/tint"
+            app:layout_constraintEnd_toEndOf="@+id/Table"
+            app:layout_constraintStart_toStartOf="@+id/Info"
+            app:layout_constraintTop_toBottomOf="@+id/Info" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rectangle_edit_settings_2"
+            android:hint="@string/tint_password"
+            android:inputType="textPassword"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:hintTextColor="@color/tint"
+            app:layout_constraintEnd_toEndOf="@+id/edPhone"
+            app:layout_constraintStart_toStartOf="@+id/edPhone"
+            app:layout_constraintTop_toBottomOf="@+id/edPhone" />
+
+        <EditText
+            android:id="@+id/edPassword2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rectangle_edit_settings_2"
+            android:hint="@string/tint_password_2"
+            android:inputType="textPassword"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:hintTextColor="@color/tint"
+            app:layout_constraintEnd_toEndOf="@+id/edPhone"
+            app:layout_constraintStart_toStartOf="@+id/edPhone"
+            app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+        <EditText
+            android:id="@+id/edGender"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/rectangle_edit_settings_2"
+            android:hint="@string/tint_gender"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:hintTextColor="@color/tint"
+            app:layout_constraintEnd_toEndOf="@+id/edPhone"
+            app:layout_constraintStart_toStartOf="@+id/edPhone"
+            app:layout_constraintTop_toBottomOf="@+id/edPassword2" />
+
+        <EditText
+            android:id="@+id/edDate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rectangle_edit_settings_2"
+            android:hint="@string/tint_date"
+            android:inputType="datetime"
+            android:paddingLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:hintTextColor="@color/tint"
+            app:layout_constraintEnd_toEndOf="@+id/edPhone"
+            app:layout_constraintStart_toStartOf="@+id/edPhone"
+            app:layout_constraintTop_toBottomOf="@+id/edGender" />
+
+        <TextView
+            android:id="@+id/Info2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/text_tag"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/edDate"
+            app:layout_constraintStart_toStartOf="@+id/Info"
+            app:layout_constraintTop_toBottomOf="@+id/edDate" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:checkedButton="@id/btRadio1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/Info2"
+            app:layout_constraintTop_toBottomOf="@+id/Info2">
+
+            <RadioButton
+                android:id="@+id/btRadio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTintMode="add"
+                android:button="@drawable/radiobutton_selector"
+                android:checked="true"
+                android:paddingStart="4dp"
+                android:text="@string/education"
+                android:textSize="14sp"
+                android:theme="@style/MyRadioButton"
+                app:layout_constraintEnd_toEndOf="@+id/choiceType"
+                app:layout_constraintStart_toStartOf="@+id/choiceType"
+                app:layout_constraintTop_toBottomOf="@+id/choiceType" />
+
+            <RadioButton
+                android:id="@+id/btRadio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:backgroundTintMode="add"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingStart="4dp"
+                android:text="@string/search"
+                android:textSize="14sp"
+                android:theme="@style/MyRadioButton"
+                app:layout_constraintEnd_toEndOf="@+id/choiceType"
+                app:layout_constraintStart_toStartOf="@+id/choiceType"
+                app:layout_constraintTop_toBottomOf="@+id/choiceType" />
+
+            <RadioButton
+                android:id="@+id/btRadio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTintMode="add"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingStart="4dp"
+                android:text="@string/career"
+                android:textSize="14sp"
+                android:theme="@style/MyRadioButton"
+                app:layout_constraintEnd_toEndOf="@+id/choiceType"
+                app:layout_constraintStart_toStartOf="@+id/choiceType"
+                app:layout_constraintTop_toBottomOf="@+id/choiceType" />
+
+            <RadioButton
+                android:id="@+id/btRadio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTintMode="add"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingStart="4dp"
+                android:text="@string/resume"
+                android:textSize="14sp"
+                android:theme="@style/MyRadioButton"
+                app:layout_constraintEnd_toEndOf="@+id/choiceType"
+                app:layout_constraintStart_toStartOf="@+id/choiceType"
+                app:layout_constraintTop_toBottomOf="@+id/choiceType" />
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/idButtonRegistration"
+        android:layout_width="301dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@drawable/button_text_color_reg_page"
+        android:text="@string/registration"
+        android:textColor="@drawable/button_text_color_reg"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Table"
+        app:layout_constraintStart_toStartOf="@+id/Table"
+        app:layout_constraintTop_toBottomOf="@+id/Table" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
