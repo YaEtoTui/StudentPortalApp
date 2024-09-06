@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import sazhin.pp.studentportalapp.R
-import sazhin.pp.studentportalapp.databinding.FragmentEducationBinding
 import sazhin.pp.studentportalapp.databinding.FragmentEducationOneBinding
-import sazhin.pp.studentportalapp.databinding.FragmentResumeAllBinding
 
 class EducationOneFragment : Fragment() {
 

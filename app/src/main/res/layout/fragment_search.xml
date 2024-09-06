@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ResumeAllFragment">
+    tools:context=".fragment.EducationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Header"
@@ -66,53 +66,54 @@
             app:layout_constraintStart_toStartOf="@+id/FI"
             app:layout_constraintTop_toBottomOf="@+id/FI" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/icon_question"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Body"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/green_2"
+        android:background="@color/orange_2"
         app:layout_constraintBottom_toTopOf="@+id/Footer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Header"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/Header">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/idListResume"
-            android:layout_width="wrap_content"
-            android:layout_height="386dp"
-            android:layout_marginTop="46dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edSearch"
+            android:layout_width="361dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/search_2"
+            android:drawableLeft="@drawable/lupa"
+            android:drawablePadding="5dp"
+            android:elevation="10dp"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/search_courses"
+            android:inputType="text"
+            android:paddingLeft="13dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/item_list_resume" />
+            app:layout_wrapBehaviorInParent="horizontal_only" />
 
-        <Button
-            android:id="@+id/idButtonCreate"
-            android:layout_width="145dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="46dp"
-            android:backgroundTint="@drawable/button_text_color_reg_page"
-            android:text="@string/create_resume"
-            android:textColor="@drawable/button_text_color_reg"
-            android:textSize="24sp"
-            app:cornerRadius="5dp"
-            app:layout_constraintEnd_toEndOf="@+id/idListResume"
-            app:layout_constraintStart_toStartOf="@+id/idListResume"
-            app:layout_constraintTop_toBottomOf="@+id/idListResume" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idListCar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="15dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edSearch"
+            tools:listitem="@layout/item_list_search" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -173,7 +174,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
-                android:text="@string/resume_2"
+                android:text="Поиск работы"
                 android:textColor="@color/white_3"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@+id/PointWhite"

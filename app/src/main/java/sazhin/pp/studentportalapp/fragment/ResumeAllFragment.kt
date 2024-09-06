@@ -55,6 +55,9 @@ class ResumeAllFragment : Fragment() {
         binding.ArrowLeft.setOnClickListener {
             findNavController().navigate(R.id.action_resumeAllFrag_to_educationAllFrag)
         }
+        binding.ArrowRight.setOnClickListener {
+            findNavController().navigate(R.id.action_resumeAllFrag_to_careerAllFrag)
+        }
     }
 
     private fun initRcView() {

@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_entryFrag_to_educationAllFrag"
             app:destination="@id/educationAllFrag" />
+        <action
+            android:id="@+id/action_entryFrag_to_careerAllFrag"
+            app:destination="@id/careerAllFrag" />
     </fragment>
 
     <fragment
@@ -39,6 +42,9 @@
         <action
             android:id="@+id/action_resumeAllFrag_to_resumeOneFrag"
             app:destination="@id/resumeOneFrag" />
+        <action
+            android:id="@+id/action_resumeAllFrag_to_careerAllFrag"
+            app:destination="@id/careerAllFrag" />
     </fragment>
 
     <fragment
@@ -75,6 +81,17 @@
             app:destination="@id/educationAllFrag" />
         <action
             android:id="@+id/action_educationOneFrag_to_resumeAllFrag"
+            app:destination="@id/resumeAllFrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/careerAllFrag"
+        android:name="sazhin.pp.studentportalapp.fragment.SearchFragment"
+        android:animateLayoutChanges="true"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_careerAllFrag_to_resumeAllFrag"
             app:destination="@id/resumeAllFrag" />
     </fragment>
 

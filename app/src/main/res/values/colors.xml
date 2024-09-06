@@ -28,6 +28,10 @@
     <color name="fiol">#4B449C</color>
     <color name="grey">#DADADA</color>
     <color name="grey_2">#B2B2B3</color>
+    <color name="grey_3">#BEC5D5</color>
     <color name="back">#D0CDF7</color>
     <color name="orange">#F19350</color>
+    <color name="orange_2">#E0D6A4</color>
+    <color name="begev">#EDE7C9</color>
+    <color name="begev_2">#F4F1DF</color>
 </resources>
