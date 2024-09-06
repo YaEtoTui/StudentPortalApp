@@ -12,12 +12,17 @@ import sazhin.pp.studentportalapp.databinding.ItemListResumeBinding
 
 class ResumeAdapter : ListAdapter<ResumeDto, ResumeAdapter.Holder>(Comparator()) {
 
+    private lateinit var onButtonClickListener: ResumeAdapter.OnButtonClickListener
+
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
 
         private val binding = ItemListResumeBinding.bind(view)
 
-        fun bind(resumeDto: ResumeDto) = with(binding) {
+        fun bind(resumeDto: ResumeDto, onButtonClickListener: ResumeAdapter.OnButtonClickListener) = with(binding) {
             /* Написать */
+            binding.cView.setOnClickListener {
+                onButtonClickListener.onClick()
+            }
         }
     }
 
@@ -39,6 +44,14 @@ class ResumeAdapter : ListAdapter<ResumeDto, ResumeAdapter.Holder>(Comparator())
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(getItem(position))
+        holder.bind(getItem(position), onButtonClickListener)
+    }
+
+    interface OnButtonClickListener {
+        fun onClick()
+    }
+
+    fun setOnButtonClickListener(listener: OnButtonClickListener) {
+        onButtonClickListener = listener
     }
 }

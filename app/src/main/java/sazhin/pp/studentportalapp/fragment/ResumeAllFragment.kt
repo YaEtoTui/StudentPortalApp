@@ -59,6 +59,11 @@ class ResumeAllFragment : Fragment() {
 
     private fun initRcView() {
         adapter = ResumeAdapter()
+        adapter.setOnButtonClickListener(object : ResumeAdapter.OnButtonClickListener {
+            override fun onClick() {
+                findNavController().navigate(R.id.action_resumeAllFrag_to_resumeOneFrag)
+            }
+        })
         binding.idListResume.layoutManager = LinearLayoutManager(context)
         binding.idListResume.adapter = adapter
     }

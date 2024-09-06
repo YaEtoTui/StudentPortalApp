@@ -22,14 +22,11 @@ class EducationFragment : Fragment() {
     private lateinit var adapter: EducationAdapter
 
     private var listEducation: MutableList<EducationDto> = mutableListOf(
-        EducationDto("", "", false),
-        EducationDto("", "", false),
-        EducationDto("", "", false),
-        EducationDto("", "", false),
-        EducationDto("", "", false),
-        EducationDto("", "", false),
-        EducationDto("", "", false),
-        EducationDto("", "", true)
+        EducationDto("", "", false, true),
+        EducationDto("", "", false, false),
+        EducationDto("", "", false, false),
+        EducationDto("", "", false, false),
+        EducationDto("", "", true, false)
     )
 
     override fun onCreateView(
@@ -56,6 +53,11 @@ class EducationFragment : Fragment() {
 
     private fun initRcView() {
         adapter = EducationAdapter()
+        adapter.setOnButtonClickListener(object : EducationAdapter.OnButtonClickListener {
+            override fun onClick() {
+                findNavController().navigate(R.id.action_educationAllFrag_to_educationOneFrag)
+            }
+        })
         binding.idListEducation.layoutManager = LinearLayoutManager(context)
         binding.idListEducation.adapter = adapter
     }

@@ -14,14 +14,24 @@ import sazhin.pp.studentportalapp.databinding.ItemListResumeBinding
 
 class EducationAdapter : ListAdapter<EducationDto, EducationAdapter.Holder>(Comparator()) {
 
+    private lateinit var onButtonClickListener: EducationAdapter.OnButtonClickListener
+
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
 
         private val binding = ItemListEducationBinding.bind(view)
 
-        fun bind(educationDto: EducationDto) = with(binding) {
+        fun bind(educationDto: EducationDto, onButtonClickListener: EducationAdapter.OnButtonClickListener) = with(binding) {
 
-            if (educationDto.check) {
+            if (educationDto.isCompleted) {
                 binding.Check.visibility = View.VISIBLE
+            } else if (educationDto.isBuy) {
+                binding.CheckBuy.visibility = View.VISIBLE
+            } else if (!educationDto.isBuy) {
+                binding.CheckBuyNot.visibility = View.VISIBLE
+            }
+
+            cView.setOnClickListener {
+                onButtonClickListener.onClick()
             }
         }
     }
@@ -44,6 +54,14 @@ class EducationAdapter : ListAdapter<EducationDto, EducationAdapter.Holder>(Comp
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(getItem(position))
+        holder.bind(getItem(position), onButtonClickListener)
+    }
+
+    interface OnButtonClickListener {
+        fun onClick()
+    }
+
+    fun setOnButtonClickListener(listener: OnButtonClickListener) {
+        onButtonClickListener = listener
     }
 }

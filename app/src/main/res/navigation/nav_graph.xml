@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_resumeAllFrag_to_educationAllFrag"
             app:destination="@id/educationAllFrag" />
+        <action
+            android:id="@+id/action_resumeAllFrag_to_resumeOneFrag"
+            app:destination="@id/resumeOneFrag" />
     </fragment>
 
     <fragment
@@ -45,6 +48,33 @@
         tools:layout="@layout/fragment_education">
         <action
             android:id="@+id/action_educationAllFrag_to_resumeAllFrag"
+            app:destination="@id/resumeAllFrag" />
+        <action
+            android:id="@+id/action_educationAllFrag_to_educationOneFrag"
+            app:destination="@id/educationOneFrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resumeOneFrag"
+        android:name="sazhin.pp.studentportalapp.fragment.ResumeOneFragment"
+        android:animateLayoutChanges="true"
+        tools:layout="@layout/fragment_resume_one">
+
+        <action
+            android:id="@+id/action_resumeOneFrag_to_resumeAllFrag"
+            app:destination="@id/resumeAllFrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/educationOneFrag"
+        android:name="sazhin.pp.studentportalapp.fragment.EducationOneFragment"
+        android:animateLayoutChanges="true"
+        tools:layout="@layout/fragment_education_one">
+        <action
+            android:id="@+id/action_educationOneFrag_to_educationAllFrag"
+            app:destination="@id/educationAllFrag" />
+        <action
+            android:id="@+id/action_educationOneFrag_to_resumeAllFrag"
             app:destination="@id/resumeAllFrag" />
     </fragment>
 
