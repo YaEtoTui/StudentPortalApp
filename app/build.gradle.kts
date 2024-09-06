@@ -40,6 +40,9 @@ android {
 
 dependencies {
 
+    //CircleView
+    implementation ("de.hdodenhof:circleimageview:2.1.0")
+
     //Glide
     implementation("com.github.bumptech.glide:glide:4.10.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.10.0")

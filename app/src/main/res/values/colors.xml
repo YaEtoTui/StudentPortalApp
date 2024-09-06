@@ -3,11 +3,20 @@
     <color name="black">#0B0000</color>
     <color name="white">#EEEEEE</color>
     <color name="white_2">#F0F2F7</color>
+    <color name="white_3">#FFFFFF</color>
+    <color name="milk">#FFF9F1</color>
     <color name="lilac">#A6B1D1</color>
     <color name="gree">#D3D8E8</color>
     <color name="tint">#0F0F0F</color>
     <color name="bt_black">#1E1E1E</color>
     <color name="gree_question">#9CA0AB</color>
     <color name="green">#99C86B</color>
+    <color name="green_2">#C2E0A4</color>
+    <color name="green_3">#EBFFF4</color>
+    <color name="gree_2">#D9D9D9</color>
     <color name="blue">#84ADD2</color>
+    <color name="blue_2">#6E84A6</color>
+    <color name="blue_3">#1952A9</color>
+    <color name="blue_4">#516488</color>
+    <color name="fiol">#4B449C</color>
 </resources>

@@ -18,4 +18,9 @@
     <string name="search">поиск работы</string>
     <string name="career">карьера</string>
     <string name="resume">резюме</string>
+    <string name="resume_2">Резюме</string>
+    <string name="fi">Фамилия Имя</string>
+    <string name="economist">Экономист</string>
+    <string name="changed_template">Обновлено 11.09.2024</string>
+    <string name="create_resume">Создать</string>
 </resources>

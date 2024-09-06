@@ -31,5 +31,8 @@ class EntryFragment : Fragment() {
         binding.Registr.setOnClickListener {
             findNavController().navigate(R.id.action_entryFrag_to_regFrag)
         }
+        binding.idButtonAuth.setOnClickListener {
+            findNavController().navigate(R.id.action_entryFrag_to_resumeAllFrag)
+        }
     }
 }
