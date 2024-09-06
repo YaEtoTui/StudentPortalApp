@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_entryFrag_to_resumeAllFrag"
             app:destination="@id/resumeAllFrag" />
+        <action
+            android:id="@+id/action_entryFrag_to_educationAllFrag"
+            app:destination="@id/educationAllFrag" />
     </fragment>
 
     <fragment
@@ -30,6 +33,19 @@
         android:name="sazhin.pp.studentportalapp.fragment.ResumeAllFragment"
         android:animateLayoutChanges="true"
         tools:layout="@layout/fragment_resume_all">
+        <action
+            android:id="@+id/action_resumeAllFrag_to_educationAllFrag"
+            app:destination="@id/educationAllFrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/educationAllFrag"
+        android:name="sazhin.pp.studentportalapp.fragment.EducationFragment"
+        android:animateLayoutChanges="true"
+        tools:layout="@layout/fragment_education">
+        <action
+            android:id="@+id/action_educationAllFrag_to_resumeAllFrag"
+            app:destination="@id/resumeAllFrag" />
     </fragment>
 
 </navigation>

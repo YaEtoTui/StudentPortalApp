@@ -46,8 +46,15 @@ class ResumeAllFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initRcView()
+        initBtNav()
 
         adapter.submitList(listResume)
+    }
+
+    private fun initBtNav() {
+        binding.ArrowLeft.setOnClickListener {
+            findNavController().navigate(R.id.action_resumeAllFrag_to_educationAllFrag)
+        }
     }
 
     private fun initRcView() {

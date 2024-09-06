@@ -7,26 +7,31 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import sazhin.pp.studentportalapp.R
+import sazhin.pp.studentportalapp.app.adapter.dto.EducationDto
 import sazhin.pp.studentportalapp.app.adapter.dto.ResumeDto
+import sazhin.pp.studentportalapp.databinding.ItemListEducationBinding
 import sazhin.pp.studentportalapp.databinding.ItemListResumeBinding
 
-class ResumeAdapter : ListAdapter<ResumeDto, ResumeAdapter.Holder>(Comparator()) {
+class EducationAdapter : ListAdapter<EducationDto, EducationAdapter.Holder>(Comparator()) {
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private val binding = ItemListResumeBinding.bind(view)
+        private val binding = ItemListEducationBinding.bind(view)
 
-        fun bind(resumeDto: ResumeDto) = with(binding) {
-            /* Написать */
+        fun bind(educationDto: EducationDto) = with(binding) {
+
+            if (educationDto.check) {
+                binding.Check.visibility = View.VISIBLE
+            }
         }
     }
 
-    class Comparator : DiffUtil.ItemCallback<ResumeDto>() {
-        override fun areItemsTheSame(oldItem: ResumeDto, newItem: ResumeDto): Boolean {
+    class Comparator : DiffUtil.ItemCallback<EducationDto>() {
+        override fun areItemsTheSame(oldItem: EducationDto, newItem: EducationDto): Boolean {
             return oldItem == newItem
         }
 
-        override fun areContentsTheSame(oldItem: ResumeDto, newItem: ResumeDto): Boolean {
+        override fun areContentsTheSame(oldItem: EducationDto, newItem: EducationDto): Boolean {
             return oldItem == newItem
         }
 
@@ -34,7 +39,7 @@ class ResumeAdapter : ListAdapter<ResumeDto, ResumeAdapter.Holder>(Comparator())
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_list_resume, parent, false)
+            .inflate(R.layout.item_list_education, parent, false)
         return Holder(view)
     }
 
