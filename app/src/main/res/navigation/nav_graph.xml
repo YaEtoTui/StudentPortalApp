@@ -29,6 +29,9 @@
         android:name="sazhin.pp.studentportalapp.fragment.RegistrationFragment"
         android:animateLayoutChanges="true"
         tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_regFrag_to_entryFrag"
+            app:destination="@id/entryFrag" />
     </fragment>
 
     <fragment

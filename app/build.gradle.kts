@@ -40,6 +40,9 @@ android {
 
 dependencies {
 
+    // Для макета телефона (+7(___)...)
+    implementation("ru.tinkoff.decoro:decoro:1.1.1")
+
     // MapKit / Yandex Map
     implementation("com.yandex.android:maps.mobile:4.2.2-full")
 

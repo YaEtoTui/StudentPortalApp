@@ -6,6 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import ru.tinkoff.decoro.MaskImpl
+import ru.tinkoff.decoro.slots.PredefinedSlots
+import ru.tinkoff.decoro.watchers.FormatWatcher
+import ru.tinkoff.decoro.watchers.MaskFormatWatcher
 import sazhin.pp.studentportalapp.R
 import sazhin.pp.studentportalapp.databinding.FragmentEntryBinding
 
@@ -23,6 +27,13 @@ class EntryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //маска для ввода телефона
+        val mask = MaskImpl.createTerminated(PredefinedSlots.RUS_PHONE_NUMBER)
+        mask.isForbidInputWhenFilled = false // default value
+
+        val formatWatcher: FormatWatcher = MaskFormatWatcher(mask)
+        formatWatcher.installOn(binding.edPhone)
 
         initBtNav()
     }
