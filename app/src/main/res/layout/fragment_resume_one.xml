@@ -39,10 +39,11 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imAvatar"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
             android:layout_marginStart="11dp"
             android:layout_marginBottom="4dp"
+            android:src="@drawable/photo_mob"
             android:background="@drawable/ellipse"
             app:layout_constraintBottom_toBottomOf="@+id/Menu"
             app:layout_constraintStart_toEndOf="@+id/Menu" />
@@ -95,9 +96,9 @@
             android:layout_height="29dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="33dp"
+            android:background="@drawable/rectangle_fontlist_item_back"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@color/back"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
@@ -117,7 +118,7 @@
             android:layout_height="27dp"
             android:layout_marginTop="33dp"
             android:layout_marginRight="27dp"
-            android:background="@color/green_2"
+            android:background="@drawable/rectangle_fontlist_item_resume_one"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -137,6 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="11dp"
             android:fillViewport="true"
             android:scrollbars="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -151,19 +153,23 @@
                 <View
                     android:id="@+id/Table"
                     android:layout_width="377dp"
-                    android:layout_height="718dp"
-                    android:background="@color/green_6"
+                    android:layout_height="0dp"
+                    android:background="@drawable/rectangle_fontlist_item_resume_one"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.529"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <ImageView
                     android:id="@+id/dd"
                     android:layout_width="92dp"
                     android:layout_height="117dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:background="@color/grey_2"
+                    android:src="@drawable/photo_mob"
                     app:layout_constraintStart_toStartOf="@+id/Table"
                     app:layout_constraintTop_toTopOf="@+id/Table" />
 
@@ -171,7 +177,9 @@
                     android:id="@+id/fio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Фамилия Имя Отчество"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="Иванов Семен Алексеевич"
                     android:textColor="@color/fiol"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="@+id/Table"
@@ -249,7 +257,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
-                    android:text="Экономист"
+                    android:text="Back-разработчик стажер"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@+id/id6"
                     app:layout_constraintStart_toEndOf="@+id/id6"
@@ -271,7 +279,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
-                    android:text="35-40 тыс. руб."
+                    android:text="25-30 тыс. руб."
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@+id/id8"
                     app:layout_constraintStart_toEndOf="@+id/id8"
@@ -314,8 +322,8 @@
                     android:id="@+id/view"
                     android:layout_width="300dp"
                     android:layout_height="32dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/blue_6"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rectangle_fontlist_item_skill"
                     app:layout_constraintStart_toStartOf="@+id/id12"
                     app:layout_constraintTop_toBottomOf="@+id/id12" />
 
@@ -323,30 +331,176 @@
                     android:id="@+id/id13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black_3"
                     android:text="Отличная коммуникативная способность"
                     app:layout_constraintBottom_toBottomOf="@+id/view"
                     app:layout_constraintEnd_toEndOf="@+id/view"
                     app:layout_constraintStart_toStartOf="@+id/view"
                     app:layout_constraintTop_toTopOf="@+id/view" />
 
+                <sazhin.pp.studentportalapp.LineView
+                    android:id="@+id/lineView"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/rectangle_fontlist_item_line"
+                    app:layout_constraintEnd_toEndOf="@+id/id13"
+                    app:layout_constraintStart_toStartOf="@+id/id13"
+                    app:layout_constraintTop_toBottomOf="@+id/id13" />
+
                 <View
                     android:id="@+id/view2"
-                    android:layout_width="250dp"
+                    android:layout_width="225dp"
                     android:layout_height="32dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/blue_6"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_fontlist_item_skill"
                     app:layout_constraintStart_toStartOf="@+id/id12"
                     app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <sazhin.pp.studentportalapp.LineView
+                    android:id="@+id/lineView2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/rectangle_fontlist_item_line"
+                    app:layout_constraintEnd_toEndOf="@+id/id14"
+                    app:layout_constraintStart_toStartOf="@+id/id14"
+                    app:layout_constraintTop_toBottomOf="@+id/id14" />
 
                 <TextView
                     android:id="@+id/id14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Стремление к саморазвитию"
+                    android:textColor="@color/black_3"
                     app:layout_constraintBottom_toBottomOf="@+id/view2"
                     app:layout_constraintEnd_toEndOf="@+id/view2"
                     app:layout_constraintStart_toStartOf="@+id/view2"
                     app:layout_constraintTop_toTopOf="@+id/view2" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_fontlist_item_skill"
+                    app:layout_constraintStart_toStartOf="@+id/id12"
+                    app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                <sazhin.pp.studentportalapp.LineView
+                    android:id="@+id/lineView3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/rectangle_fontlist_item_line"
+                    app:layout_constraintEnd_toEndOf="@+id/id15"
+                    app:layout_constraintStart_toStartOf="@+id/id15"
+                    app:layout_constraintTop_toBottomOf="@+id/id15" />
+
+                <TextView
+                    android:id="@+id/id15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Работаю с реляционными БД: PostgreSQL и SQLite"
+                    android:textColor="@color/black_3"
+                    app:layout_constraintBottom_toBottomOf="@+id/view3"
+                    app:layout_constraintEnd_toEndOf="@+id/view3"
+                    app:layout_constraintStart_toStartOf="@+id/view3"
+                    app:layout_constraintTop_toTopOf="@+id/view3" />
+
+                <TextView
+                    android:id="@+id/id16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Портфолио:"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/fiol"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/id8"
+                    app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+                <TextView
+                    android:id="@+id/id18"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:text="Победитель пятой"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/id16"
+                    app:layout_constraintStart_toEndOf="@+id/id16"
+                    app:layout_constraintTop_toTopOf="@+id/id16" />
+
+                <TextView
+                    android:id="@+id/id17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Всероссийской олимпиаде по программированию среди студентов "
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/id18"
+                    app:layout_constraintStart_toStartOf="@+id/id16"
+                    app:layout_constraintTop_toBottomOf="@+id/id16" />
+
+                <TextView
+                    android:id="@+id/id19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:text="Биография:"
+                    android:textColor="@color/fiol"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/id16"
+                    app:layout_constraintTop_toBottomOf="@+id/id17" />
+
+                <TextView
+                    android:id="@+id/id20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text=" В 2022 году участвовал "
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/id19"
+                    app:layout_constraintStart_toEndOf="@+id/id19"
+                    app:layout_constraintTop_toTopOf="@+id/id19" />
+
+                <TextView
+                    android:id="@+id/id21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="в научной конференции «Горизонты России» (Казань, Москва) и других в конференциях, а также в хакатонах ЯТы Герой."
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/id20"
+                    app:layout_constraintStart_toStartOf="@+id/id19"
+                    app:layout_constraintTop_toBottomOf="@+id/id19" />
+
+                <TextView
+                    android:id="@+id/id22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="Курсы:"
+                    android:textColor="@color/fiol"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/id16"
+                    app:layout_constraintTop_toBottomOf="@+id/id21" />
+
+                <sazhin.pp.studentportalapp.LineView
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/rectangle_fontlist_item_line"
+                    app:layout_constraintEnd_toEndOf="@+id/id23"
+                    app:layout_constraintStart_toStartOf="@+id/id23"
+                    app:layout_constraintTop_toBottomOf="@+id/id23" />
+
+                <TextView
+                    android:id="@+id/id23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="6dp"
+                    android:text="0"
+                    android:textColor="@color/black_3"
+                    app:layout_constraintBottom_toBottomOf="@+id/id22"
+                    app:layout_constraintStart_toEndOf="@+id/id22"
+                    app:layout_constraintTop_toTopOf="@+id/id22" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
