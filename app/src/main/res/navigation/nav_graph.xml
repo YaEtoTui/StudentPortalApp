@@ -20,8 +20,8 @@
             android:id="@+id/action_entryFrag_to_educationAllFrag"
             app:destination="@id/educationAllFrag" />
         <action
-            android:id="@+id/action_entryFrag_to_careerAllFrag"
-            app:destination="@id/careerAllFrag" />
+            android:id="@+id/action_entryFrag_to_searchAllFrag"
+            app:destination="@id/searchAllFrag" />
     </fragment>
 
     <fragment
@@ -43,8 +43,8 @@
             android:id="@+id/action_resumeAllFrag_to_resumeOneFrag"
             app:destination="@id/resumeOneFrag" />
         <action
-            android:id="@+id/action_resumeAllFrag_to_careerAllFrag"
-            app:destination="@id/careerAllFrag" />
+            android:id="@+id/action_resumeAllFrag_to_searchAllFrag"
+            app:destination="@id/searchAllFrag" />
     </fragment>
 
     <fragment
@@ -85,14 +85,27 @@
     </fragment>
 
     <fragment
-        android:id="@+id/careerAllFrag"
+        android:id="@+id/searchAllFrag"
         android:name="sazhin.pp.studentportalapp.fragment.SearchFragment"
         android:animateLayoutChanges="true"
         tools:layout="@layout/fragment_search">
 
         <action
-            android:id="@+id/action_careerAllFrag_to_resumeAllFrag"
+            android:id="@+id/action_searchAllFrag_to_resumeAllFrag"
             app:destination="@id/resumeAllFrag" />
+        <action
+            android:id="@+id/action_searchAllFrag_to_searchOneFrag"
+            app:destination="@id/searchOneFrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchOneFrag"
+        android:name="sazhin.pp.studentportalapp.fragment.SearchOneFragment"
+        android:animateLayoutChanges="true"
+        tools:layout="@layout/fragment_search_one">
+        <action
+            android:id="@+id/action_searchOneFrag_to_searchAllFrag"
+            app:destination="@id/searchAllFrag" />
     </fragment>
 
 </navigation>

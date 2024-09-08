@@ -56,7 +56,7 @@ class ResumeAllFragment : Fragment() {
             findNavController().navigate(R.id.action_resumeAllFrag_to_educationAllFrag)
         }
         binding.ArrowRight.setOnClickListener {
-            findNavController().navigate(R.id.action_resumeAllFrag_to_careerAllFrag)
+            findNavController().navigate(R.id.action_resumeAllFrag_to_searchAllFrag)
         }
     }
 

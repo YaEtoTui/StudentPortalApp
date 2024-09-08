@@ -40,6 +40,12 @@ android {
 
 dependencies {
 
+    // MapKit / Yandex Map
+    implementation("com.yandex.android:maps.mobile:4.2.2-full")
+
+    // Add MapKit SDK full dependency
+    implementation("com.yandex.android:maps.mobile:4.5.1-full")
+
     //CircleView
     implementation ("de.hdodenhof:circleimageview:2.1.0")
 

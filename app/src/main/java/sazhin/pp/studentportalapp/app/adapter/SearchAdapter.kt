@@ -18,9 +18,9 @@ class SearchAdapter : ListAdapter<SearchDto, SearchAdapter.Holder>(Comparator())
 
         private val binding = ItemListSearchBinding.bind(view)
 
-        fun bind(resumeDto: SearchDto, onButtonClickListener: SearchAdapter.OnButtonClickListener) = with(binding) {
+        fun bind(searchDto: SearchDto, onButtonClickListener: SearchAdapter.OnButtonClickListener) = with(binding) {
             /* Написать */
-            binding.cView.setOnClickListener {
+            binding.idButtonClick.setOnClickListener {
                 onButtonClickListener.onClick()
             }
         }
