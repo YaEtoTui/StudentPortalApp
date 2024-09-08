@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.yandex.mapkit.Animation
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
@@ -37,6 +38,13 @@ class SearchOneFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initMap()
+        initBtNav()
+    }
+
+    private fun initBtNav() {
+        binding.idButtonBuy.setOnClickListener {
+            findNavController().navigate(R.id.action_searchOneFrag_to_educationAllFrag)
+        }
     }
 
     override fun onStop() {

@@ -112,6 +112,9 @@
         <action
             android:id="@+id/action_searchOneFrag_to_searchAllFrag"
             app:destination="@id/searchAllFrag" />
+        <action
+            android:id="@+id/action_searchOneFrag_to_educationAllFrag"
+            app:destination="@id/educationAllFrag" />
     </fragment>
 
 </navigation>

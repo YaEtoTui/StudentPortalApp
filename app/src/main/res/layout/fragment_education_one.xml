@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="36dp"
-                android:text="@string/geed"
+                android:text="Промышленная разработка на Java"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -232,7 +232,7 @@
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="13dp"
-            android:text="Освой востребованную профессию и научись создавать логотипы, дизайн упаковки, рекламные баннеры, инфографику. Создайте фирменный стиль и брендинг для реального заказчика."
+            android:text="Освойте востребованную профессию и научитесь создавать микросервисные архитектуры. Создайте свой отказоустойчивый сервис."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -243,33 +243,22 @@
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Познакомься с основными аспектами работы графического, веб дизайна и моушн дизайна."
+            android:text="Ознакомьтесь с основами языка Java и framework Spring."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Попробуй себя на практике в каждом из направлений"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-        <TextView
             android:id="@+id/textView5"
             android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Мы подробно расскажем, что входит в профессию графического дизайна, веб дизайна, моушена и чем они отличаются друг от друга. "
+            android:text="Мы подробно расскажем, что включает в себя профессия разработчика."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Button
             android:id="@+id/idButtonBuy"

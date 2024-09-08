@@ -22,11 +22,10 @@ class EducationFragment : Fragment() {
     private lateinit var adapter: EducationAdapter
 
     private var listEducation: MutableList<EducationDto> = mutableListOf(
-        EducationDto("", "", false, true),
-        EducationDto("", "", false, false),
-        EducationDto("", "", false, false),
-        EducationDto("", "", false, false),
-        EducationDto("", "", true, false)
+        EducationDto("Изучение Git", false, false),
+        EducationDto("Релляционные БД", false, false),
+        EducationDto("Промышленная разработка на Java", false, true),
+        EducationDto("Алгоритмы и структуры данных", false, true)
     )
 
     override fun onCreateView(

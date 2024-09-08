@@ -14,13 +14,17 @@ import sazhin.pp.studentportalapp.databinding.ItemListResumeBinding
 
 class EducationAdapter : ListAdapter<EducationDto, EducationAdapter.Holder>(Comparator()) {
 
-    private lateinit var onButtonClickListener: EducationAdapter.OnButtonClickListener
+    private lateinit var onButtonClickListener: OnButtonClickListener
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
 
         private val binding = ItemListEducationBinding.bind(view)
 
-        fun bind(educationDto: EducationDto, onButtonClickListener: EducationAdapter.OnButtonClickListener) = with(binding) {
+        fun bind(educationDto: EducationDto, onButtonClickListener: OnButtonClickListener) = with(binding) {
+
+            binding.apply {
+                Prof.text = educationDto.name
+            }
 
             if (educationDto.isCompleted) {
                 binding.Check.visibility = View.VISIBLE
