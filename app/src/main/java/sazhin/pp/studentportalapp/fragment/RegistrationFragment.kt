@@ -1,11 +1,14 @@
 package sazhin.pp.studentportalapp.fragment
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.RadioGroup
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,7 +24,7 @@ import sazhin.pp.studentportalapp.databinding.FragmentResumeAllBinding
 
 class RegistrationFragment : Fragment() {
 
-    private lateinit var adapter : FilterAdapter
+    private lateinit var adapter: FilterAdapter
 
     private lateinit var binding: FragmentRegistrationBinding
 
@@ -45,11 +48,31 @@ class RegistrationFragment : Fragment() {
 
         initListGender()
         initBtNav()
+        initCalendar()
+    }
+
+    private fun initCalendar() {
+
+        binding.apply {
+
+            edDate.setOnClickListener {
+                if (Calendar.isVisible) {
+                    Calendar.visibility = View.GONE
+                } else {
+                    Calendar.visibility = View.VISIBLE
+                }
+            }
+
+            calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
+                edDate.setText("$dayOfMonth.${month + 1}.$year")
+                Calendar.visibility = View.GONE
+            }
+        }
     }
 
     private fun initListGender() {
         adapter = FilterAdapter()
-        adapter.setOnButtonClickListener(object: FilterAdapter.OnButtonClickListener {
+        adapter.setOnButtonClickListener(object : FilterAdapter.OnButtonClickListener {
             override fun onClick(strChoice: String) {
                 binding.edGender.setText(strChoice)
                 binding.idListGenders.visibility = View.GONE
