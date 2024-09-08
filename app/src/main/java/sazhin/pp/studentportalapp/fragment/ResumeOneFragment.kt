@@ -32,5 +32,8 @@ class ResumeOneFragment : Fragment() {
         binding.idBack.setOnClickListener {
             findNavController().navigate(R.id.action_resumeOneFrag_to_resumeAllFrag)
         }
+        binding.ArrowRight.setOnClickListener {
+            findNavController().navigate(R.id.action_resumeOneFrag_to_searchAllFrag)
+        }
     }
 }

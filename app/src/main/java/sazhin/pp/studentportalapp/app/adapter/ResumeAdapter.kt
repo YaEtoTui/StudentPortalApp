@@ -19,6 +19,12 @@ class ResumeAdapter : ListAdapter<ResumeDto, ResumeAdapter.Holder>(Comparator())
         private val binding = ItemListResumeBinding.bind(view)
 
         fun bind(resumeDto: ResumeDto, onButtonClickListener: ResumeAdapter.OnButtonClickListener) = with(binding) {
+
+            binding.apply {
+                Prof.setText(resumeDto.profession)
+                Updated.setText("Обновлено  ${resumeDto.updated}")
+            }
+
             /* Написать */
             binding.cView.setOnClickListener {
                 onButtonClickListener.onClick()

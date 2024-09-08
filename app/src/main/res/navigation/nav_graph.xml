@@ -72,6 +72,9 @@
         <action
             android:id="@+id/action_resumeOneFrag_to_resumeAllFrag"
             app:destination="@id/resumeAllFrag" />
+        <action
+            android:id="@+id/action_resumeOneFrag_to_searchAllFrag"
+            app:destination="@id/searchAllFrag" />
     </fragment>
 
     <fragment

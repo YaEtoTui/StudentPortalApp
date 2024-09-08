@@ -28,27 +28,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/Prof2"
+            android:id="@+id/Updated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Компания: СтудентПомошник"
-            android:layout_marginTop="5dp"
-            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:text="@string/changed_template"
             android:textColor="@color/black"
             android:textSize="11sp"
             app:layout_constraintStart_toStartOf="@+id/Prof"
             app:layout_constraintTop_toBottomOf="@+id/Prof" />
-
-        <TextView
-            android:id="@+id/Updated"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/changed_template"
-            android:textColor="@color/black"
-            android:textSize="11sp"
-            app:layout_constraintStart_toStartOf="@+id/Prof2"
-            app:layout_constraintTop_toBottomOf="@+id/Prof2" />
 
         <ImageView
             android:id="@+id/Gear"

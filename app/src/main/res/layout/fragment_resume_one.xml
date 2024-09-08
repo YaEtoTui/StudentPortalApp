@@ -168,7 +168,6 @@
                     android:layout_height="117dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:background="@color/grey_2"
                     android:src="@drawable/photo_mob"
                     app:layout_constraintStart_toStartOf="@+id/Table"
                     app:layout_constraintTop_toTopOf="@+id/Table" />

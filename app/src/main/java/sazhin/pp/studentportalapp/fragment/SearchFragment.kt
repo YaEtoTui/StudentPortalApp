@@ -19,10 +19,9 @@ class SearchFragment : Fragment() {
     private lateinit var adapter: SearchAdapter
 
     private var listCareer: MutableList<SearchDto> = mutableListOf(
-        SearchDto("", ""),
-        SearchDto("", ""),
-        SearchDto("", ""),
-        SearchDto("", "")
+        SearchDto("Back-разработчик на джаве", "30000 - 45000 руб", "ИРИТ-РТФ", "Без опыта", "Техническое образование"),
+        SearchDto("Разработчик", "20000 - 25000 руб", "Наша Гордость", "Без опыта", "Техническое образование"),
+        SearchDto("Developer", "20000 - 25000 руб", "Знай наших", "Без опыта", "Техническое образование")
     )
 
     override fun onCreateView(

@@ -12,13 +12,20 @@ import sazhin.pp.studentportalapp.databinding.ItemListSearchBinding
 
 class SearchAdapter : ListAdapter<SearchDto, SearchAdapter.Holder>(Comparator()) {
 
-    private lateinit var onButtonClickListener: SearchAdapter.OnButtonClickListener
+    private lateinit var onButtonClickListener: OnButtonClickListener
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
 
         private val binding = ItemListSearchBinding.bind(view)
 
-        fun bind(searchDto: SearchDto, onButtonClickListener: SearchAdapter.OnButtonClickListener) = with(binding) {
+        fun bind(searchDto: SearchDto, onButtonClickListener: OnButtonClickListener) = with(binding) {
+
+            Prof.text = searchDto.profession
+            Sum.text = searchDto.sum
+            Firma.text = searchDto.company
+            Source.text = searchDto.experience
+            Education.text = searchDto.educationType
+
             /* Написать */
             binding.idButtonClick.setOnClickListener {
                 onButtonClickListener.onClick()
