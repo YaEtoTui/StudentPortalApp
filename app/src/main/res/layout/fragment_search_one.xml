@@ -149,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="16dp"
-                    android:text="Экономист"
+                    android:text="Back-разработчик на джаве"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/Fon"
@@ -160,7 +160,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="40 000 - 60 000 руб"
+                    android:text="30000 - 45000 руб"
                     android:textSize="22sp"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
                     app:layout_constraintTop_toBottomOf="@+id/Prof" />
@@ -213,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="19dp"
-                    android:text="- формирование пакета документов на одобрение кредитного продукта банка;"
+                    android:text="- Разработка нового ПО и поддержка, доработка, существующего;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Fon"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
@@ -223,7 +223,7 @@
                     android:id="@+id/Info5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- формирование ежедневного реестра счетов на оплату;"
+                    android:text="- Поддержка и сопровождение текущих проектов на Java, Spring Framework;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
@@ -233,7 +233,7 @@
                     android:id="@+id/Info6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- оформление заявки на страхование сотрудников в действующую страховую компанию;"
+                    android:text="- Разработка структуры базы данных;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
@@ -243,21 +243,11 @@
                     android:id="@+id/Info7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- произведение расчёта, анализа, а также сопровождение до окончания сделки лизингового продукта;"
+                    android:text="- Рефакторинг и оптимизация верстки и кода;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
                     app:layout_constraintTop_toBottomOf="@+id/Info6" />
-
-                <TextView
-                    android:id="@+id/Info8"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="- сбор документов для оформления в личном кабинете допуска на объект."
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/Info4"
-                    app:layout_constraintStart_toStartOf="@+id/Prof"
-                    app:layout_constraintTop_toBottomOf="@+id/Info7" />
 
                 <TextView
                     android:id="@+id/Info9"
@@ -268,7 +258,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
-                    app:layout_constraintTop_toBottomOf="@+id/Info8" />
+                    app:layout_constraintTop_toBottomOf="@+id/Info7" />
 
                 <TextView
                     android:id="@+id/Info10"
@@ -276,7 +266,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="19dp"
-                    android:text="- Опыт работы в планово-экономическом/финансово-экономическом отделе приветствуется;"
+                    android:text="- Java 8-11;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Fon"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
@@ -286,7 +276,7 @@
                     android:id="@+id/Info11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- Опыт работы в банковском направлении приветствуется;"
+                    android:text="- Опыт работы с SQL(postgresql);"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
@@ -296,7 +286,7 @@
                     android:id="@+id/Info12"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- Навыки делового общения, умение вести переговоры, грамотная речь;"
+                    android:text="- Опыт работы с git;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
@@ -306,7 +296,7 @@
                     android:id="@+id/Info13"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- Высшее образование;"
+                    android:text="- Умение писать понятный код на языке программирования java;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
@@ -316,21 +306,11 @@
                     android:id="@+id/Info14"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- Уверенный пользователь программ: MS EXSEL (знание сводных таблиц, формул);"
+                    android:text="- Умение читать и понимать чужой код;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
                     app:layout_constraintTop_toBottomOf="@+id/Info13" />
-
-                <TextView
-                    android:id="@+id/Info15"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="- Легкообучаемость, внимательность, ответственность, доброжелательность, стремление развиваться."
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/Info4"
-                    app:layout_constraintStart_toStartOf="@+id/Prof"
-                    app:layout_constraintTop_toBottomOf="@+id/Info14" />
 
                 <TextView
                     android:id="@+id/Info16"
@@ -341,7 +321,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
-                    app:layout_constraintTop_toBottomOf="@+id/Info15" />
+                    app:layout_constraintTop_toBottomOf="@+id/Info14" />
 
                 <TextView
                     android:id="@+id/Info17"
@@ -369,7 +349,7 @@
                     android:id="@+id/Info19"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="- График работы 5/2 с 8:00 до 17:00;"
+                    android:text="- График работы 5/2 с 8:00 до 16:00;"
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/Info4"
                     app:layout_constraintStart_toStartOf="@+id/Prof"
